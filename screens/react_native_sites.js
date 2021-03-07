@@ -10,11 +10,17 @@ export default class React_native_sites extends Component{
 
     render(){
         return(
-            <View style={{ flex: 1 }}>
+            <View style={{ flex: 1 ,
+            }}>
             <View style={{ flex: 0.1 }}>
               <MyHeader title="React Native Errors"/>
             </View>
-                <View style={{ alignItems: "center" }}>
+                <View style={{
+            alignItems: "center",
+            flex: 0.88,
+            alignItems: "center",
+            justifyContent: "center",
+          }}>
             
                   <TouchableOpacity
                     style={[styles.button, { marginTop: 30 }]}
@@ -95,7 +101,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     borderRadius: RFValue(50),
-    backgroundColor: "#329d9c",
+    backgroundColor: "#0f2a33",
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -114,7 +120,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     borderRadius: RFValue(50),
-    backgroundColor: "#205072",
+    backgroundColor: "#0f2a33",
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -128,7 +134,7 @@ const styles = StyleSheet.create({
   registerButtonText: {
     fontSize: RFValue(23),
     fontWeight: "bold",
-    color: "#fff"
+    color: "#2ec4f1"
   },
   
 });

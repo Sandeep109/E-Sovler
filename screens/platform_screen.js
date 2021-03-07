@@ -8,7 +8,8 @@ import { RFValue } from "react-native-responsive-fontsize";
 export default class Platforms extends Component {
   render() {
     return (
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1,
+      }}>
         <View style={{ flex: 0.12 }}>
           <MyHeader title="Error Solver" />
         </View>
@@ -17,7 +18,7 @@ export default class Platforms extends Component {
             alignItems: "center",
             flex: 0.88,
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
           }}
         >
           <TouchableOpacity
@@ -78,7 +79,7 @@ export default class Platforms extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#cca9a3",
     alignItems: "center",
     justifyContent: "center"
   },
@@ -89,7 +90,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     borderRadius: RFValue(50),
-    backgroundColor: "#329d9c",
+    backgroundColor: "#0f2a33",
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -107,7 +108,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     borderRadius: RFValue(50),
-    backgroundColor: "#205072",
+    backgroundColor: "#0f2a33",
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -121,6 +122,6 @@ const styles = StyleSheet.create({
   registerButtonText: {
     fontSize: RFValue(23),
     fontWeight: "bold",
-    color: "#fff"
+    color: "#2ec4f1"
   }
 });

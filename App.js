@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, Text, Button, StyleSheet } from "react-native";
+import { View, Text, Button, StyleSheet, Image, ImageBackground ,Dimensions } from "react-native";
 import android_studio_sites from "./screens/android_studio_sites";
 import platform_screen from "./screens/platform_screen";
 import react_native_sites from "./screens/react_native_sites";
@@ -14,9 +14,19 @@ import React_Native_Dev from "./screens/error_solvers/React_native_dev";
 import StackOverFlow from "./screens/error_solvers/StackOverFlow";
 import Unity_Support from "./screens/error_solvers/unity_support";
 import W3Schools from "./screens/error_solvers/W3Schools";
+
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
+
 export default class App extends React.Component {
   render() {
-    return <AppContainer />;
+    return (
+    <View>
+    <ImageBackground source={require("./assets/bg.jpg")} style={{height:windowHeight, width:windowWidth}} >
+    <AppContainer />
+    </ImageBackground>
+    </View>
+    )
   }
 }
 var AppNavigator = createSwitchNavigator({

@@ -20,7 +20,7 @@ export default class StackOverFlow extends Component{
 
     render(){
         return(
-            <View style={{ flex: 1 }}>
+            <View style={{ flex: 1}}>
             <View style={{ flex: 0.12 }}>
               <MyHeader title="StackOverFlow"/>
             </View>
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     borderRadius: RFValue(50),
-    backgroundColor: "#205072",
+    backgroundColor: "#0f2a33",
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
   registerButtonText: {
     fontSize: RFValue(23),
     fontWeight: "bold",
-    color: "#fff"
+    color: "#2ec4f1"
   },
   profileContainer:{
     flex:1,
