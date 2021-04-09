@@ -22,7 +22,7 @@ export default class App extends React.Component {
   render() {
     return (
     <View>
-    <ImageBackground source={require("./assets/bg.jpg")} style={{height:windowHeight, width:windowWidth}} >
+    <ImageBackground style={styles.container} source={require("./assets/bg.jpg")}  >
     <AppContainer />
     </ImageBackground>
     </View>
@@ -46,3 +46,11 @@ var AppNavigator = createSwitchNavigator({
 });
 
 const AppContainer = createAppContainer(AppNavigator);
+
+
+const styles = StyleSheet.create({
+  container: {
+    height:windowHeight,
+    width:windowWidth
+  }
+})
